@@ -1,1 +1,95 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Asegura que los elementos se distribuyan correctamente */
+  text-align: center;
+  padding: 15px;
+}
+
+.card-content {
+  flex-grow: 1; /* Permite que el contenido principal ocupe el espacio disponible */
+}
+
+.card-actions {
+  margin-top: auto; /* Empuja el botón hacia el final de la tarjeta */
+}
+
+
+.product-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h3 {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.card-content p {
+  color: #555;
+  font-size: 0.9em;
+}
+
+.card-actions {
+  margin: 15px 0;
+}
+
+.primary-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.primary-button:hover {
+  background-color: #0056b3;
+}
+
+.rating {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #333;
+}
+
+.product-card {
+  margin: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

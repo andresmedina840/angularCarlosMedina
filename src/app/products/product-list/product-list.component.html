@@ -1,0 +1,23 @@
+<a [routerLink]="['/carritoTiendas']">
+    <button class="primary-button">Carrito</button>
+  </a>
+  
+  <div class="products-container">
+    <div class="card" *ngFor="let product of productList">
+      <img [src]="product.image" alt="{{ product.title }}" class="product-image" />
+      <div class="card-content">
+        <h3>{{ product.title }}</h3>
+        <strong>${{ product.price }}</strong>
+        <p>{{ product.description }}</p>
+        <p><strong>Categoría:</strong> {{ product.category }}</p>
+        <div class="rating">
+          <p><strong>Calificación:</strong> {{ product.rating.rate }}</p>
+          <p><strong>Opiniones:</strong> {{ product.rating.count }}</p>
+        </div>
+      </div>
+      <div class="card-actions">
+        <button class="primary-button" (click)="addToCart(product)">Añadir al carrito</button>
+      </div>
+    </div>
+  </div>
+  

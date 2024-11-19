@@ -1,0 +1,28 @@
+<a [routerLink]="['/']">
+    <button>Inicio</button>
+  </a>
+  <br><br>
+  <a [routerLink]="['/carritoTiendas']">
+    <button>Checkout</button>
+  </a>
+
+  <div class="checkout-container">
+    <h2>Resumen de tu compra</h2>
+  
+    <div>
+      <div *ngFor="let item of cartItems" class="cart-item">
+        <p>{{ item.title }} {{ item.price | currency }}</p>
+        <p><strong>Descripción: </strong>{{ item.description }}</p>
+      </div>
+    </div>
+  
+    <div>
+      <h3>Total a pagar: {{ total | currency }}</h3>
+    </div>
+  
+    <div class="checkout-actions">
+      <button (click)="goToProducts()">Seguir comprando</button>
+      <button (click)="goToCart()">Modificar compra</button>
+    </div>
+  </div>
+  
