@@ -1,15 +1,22 @@
-.success-snackbar {
-    background-color: #4caf50 !important; 
-    color: #fff;
-  }
-  
-  .error-snackbar {
-    background-color: #f44336 !important; 
-    color: #fff;
-  }
-  
-  .info-snackbar {
-    background-color: #2196f3 !important; 
-    color: #fff;
-  }
-  
+/* Estilos para el botón con el ícono */
+.primary-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: #4caf50; /* Color de fondo */
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.primary-button i {
+  margin-right: 0.5rem; /* Espacio entre el ícono y el texto */
+  font-size: 1.3rem; /* Tamaño del ícono */
+}
+
+.primary-button:hover {
+  background-color: #45a049; /* Cambio de color al pasar el ratón */
+}

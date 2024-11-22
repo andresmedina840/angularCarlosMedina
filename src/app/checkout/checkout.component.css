@@ -1,0 +1,116 @@
+/* Estilos generales */
+h2 {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  /* Estilos para el contenedor de la compra */
+  .checkout-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos para cada item del carrito */
+  .cart-item {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+  }
+  
+  .cart-item p {
+    font-size: 1rem;
+    color: #333;
+    margin: 0.5rem 0;
+  }
+  
+  .cart-item strong {
+    color: #2d6a4f;
+  }
+  
+  /* Botones principales */
+  a button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  a button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Estilos para el total a pagar */
+  h3 {
+    font-size: 1.8rem;
+    color: #d9534f;
+    font-weight: bold;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  /* Contenedor de los botones de acción */
+  .checkout-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+  
+  /* Botones de acción para seguir comprando y modificar compra */
+  .checkout-actions button {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+    width: 45%;
+  }
+  
+  .checkout-actions button:hover {
+    background-color: #e67e22;
+  }
+  
+  .checkout-actions button:focus {
+    outline: none;
+  }
+  
+  /* Espaciado entre los enlaces y los botones */
+  a {
+    text-decoration: none;
+  }
+  
+  a button {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  /* Estilos para el espaciado */
+  br {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
